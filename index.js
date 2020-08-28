@@ -73,12 +73,15 @@ function writeToFile(fileName, data) {
     const markdownText = `# ${data.title}\n`+
     `[![GitHub License](https://img.shields.io/badge/License-${data.license}-<COLOR>.svg)](https://shields.io/)\n\n`+
     `## Tables of Contents\n\n`+
+    `* [Description](#description)\n\n` +
     `* [Installation](#installation)\n\n` +
     `* [Usage](#usage)\n\n` +
     `* [License](#license)\n\n` +
     `* [Contributing](#contributing)\n\n` +
     `* [Tests](#tests)\n\n` +
     `* [Questions](#questions)\n\n` +
+    `## Description\n\n` +
+    `${data.description}\n\n` +
     `## Installation\n\n` +
     `To install the necessary dependencies, run the following command:\n\n` +
     "```\n" + data.installation + "\n```\n\n" +
